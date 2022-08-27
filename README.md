@@ -45,6 +45,15 @@ This homework assignment contains two levels. The second level is optional but h
   * Transform the dataset to fit the tables in the [schema file](../Resources/schema.sql). Be sure that the DataFrames match in data type and in column name.
 
   * Load the DataFrames that correspond to tables into an RDS instance. **Note:** This process can take up to 10 minutes for each. Ensure that everything is correct before uploading.
+![image](https://user-images.githubusercontent.com/99145651/186796767-677eb045-5a31-44b8-8099-b7280cfb02ff.png)
+
+![image](https://user-images.githubusercontent.com/99145651/186796864-91338b85-8a7e-4c5b-8da6-53979a5c1fb9.png)
+
+![image](https://user-images.githubusercontent.com/99145651/186796936-604e55ee-7a57-48fe-b34c-d83fab65d3fd.png)
+
+![image](https://user-images.githubusercontent.com/99145651/186796999-232f0d56-769c-4963-82c1-6cf05b6db5a9.png)
+
+![image](https://user-images.githubusercontent.com/99145651/186797077-1e21e54f-d78b-4e92-9b4e-09b200b208c2.png)
 
 ### Level 2
 
