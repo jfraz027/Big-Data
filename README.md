@@ -1,22 +1,8 @@
 # Big-Data
-# Unit 22 Homework: “Alexa, Can You Handle Big Data?”
-
-## Before You Begin
-
-1. Create a new repository for this project called `big-data-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the level of challenge that you choose. Use folder names corresponding to the challenges: level-1 or level-2.
-
-4. Download a Google Colab Notebook as a `ipynb` file and add it to this folder. This will be the main script to run for analysis. Be sure to also add any SQL queries that you used to a `.sql` file and then add it to your repo.
-
-5. Push the above changes to GitHub or GitLab.
-
 
 ## Background
 
-In this assignment, you will put your ETL skills to the test. Many of Amazon's shoppers depend on product reviews to make a purchase. Amazon makes these datasets publicly available. They are quite large and can exceed the capacity of local machines. One dataset alone contains over 1.5 million rows; with over 40 datasets, data analysis can be very demanding on the average local computer. Your first goal for this assignment will be to perform the ETL process completely in the cloud and upload a DataFrame to an RDS instance. The second goal will be to use PySpark or SQL to perform a statistical analysis of selected data.
+Amazon's shoppers depend on product reviews to make a purchase. Amazon makes these datasets publicly available. They are quite large and can exceed the capacity of local machines. One dataset alone contains over 1.5 million rows; with over 40 datasets, data analysis can be very demanding on the average local computer. The goal is be to perform the ETL process completely in the cloud and upload a DataFrame to an RDS instance. 
 
 This homework assignment contains two levels. The second level is optional but highly recommended.
 
@@ -45,6 +31,8 @@ This homework assignment contains two levels. The second level is optional but h
   * Transform the dataset to fit the tables in the [schema file](../Resources/schema.sql). Be sure that the DataFrames match in data type and in column name.
 
   * Load the DataFrames that correspond to tables into an RDS instance. **Note:** This process can take up to 10 minutes for each. Ensure that everything is correct before uploading.
+  
+  # First Data - One 
 ![image](https://user-images.githubusercontent.com/99145651/186796767-677eb045-5a31-44b8-8099-b7280cfb02ff.png)
 
 ![image](https://user-images.githubusercontent.com/99145651/186796864-91338b85-8a7e-4c5b-8da6-53979a5c1fb9.png)
@@ -55,6 +43,19 @@ This homework assignment contains two levels. The second level is optional but h
 
 ![image](https://user-images.githubusercontent.com/99145651/186797077-1e21e54f-d78b-4e92-9b4e-09b200b208c2.png)
 
+  # Second Data - Two 
+
+![image](https://user-images.githubusercontent.com/99145651/187036508-828befb0-a698-4c89-acad-d86edf7c6fba.png)
+
+![image](https://user-images.githubusercontent.com/99145651/187036701-fa93ef93-3f8c-4f61-8ad0-903c644c3772.png)
+
+![image](https://user-images.githubusercontent.com/99145651/187036728-85050634-9104-4576-b292-dd3404ad5339.png)
+
+![image](https://user-images.githubusercontent.com/99145651/187036752-a6e598b7-44e5-4fdb-8af9-5fb7214a0630.png)
+
+![image](https://user-images.githubusercontent.com/99145651/187036776-505cfede-ae4c-44a8-994b-964ef5d823e9.png)
+
+
 ### Level 2
 
 In Amazon's Vine program, reviewers receive free products in exchange for reviews.
@@ -63,11 +64,11 @@ In Amazon's Vine program, reviewers receive free products in exchange for review
 
 Amazon has several policies to reduce the bias of its Vine reviews: [https://www.amazon.com/gp/vine/help?ie=UTF8](https://www.amazon.com/gp/vine/help?ie=UTF8).
 
-But are Vine reviews truly trustworthy? Your task is to investigate whether Vine reviews are free of bias. Use either PySpark or, for an extra challenge, SQL to analyze the data.
+But are Vine reviews truly trustworthy? Investigate whether Vine reviews are free of bias. Use either PySpark or, for an extra challenge, SQL to analyze the data.
 
-* If you choose SQL, first use Spark on Colab to extract and transform the data and then load it into a SQL table on your RDS account. Perform your analysis with SQL queries on RDS.
+* With SQL, first use Spark on Colab to extract and transform the data and then load it into a SQL table on your RDS account. Perform analysis with SQL queries on RDS.
 
-* While there are no strict requirements for the analysis, consider steps you can take to reduce noisy data, such as filtering for reviews that meet a certain number of helpful votes, total votes, or both.
+* Consider steps such as filtering for reviews that meet a certain number of helpful votes, total votes, or both.
 
 * Submit a summary of your findings and analysis.
 
@@ -101,32 +102,18 @@ os.environ["SPARK_HOME"] = f"/content/{spark_version}-bin-hadoop2.7"
 import findspark
 findspark.init()
 ```
+![image](https://user-images.githubusercontent.com/99145651/187036922-95622468-82bd-412e-9012-c96ad63820fc.png)
+
 
 * For connection to Postgres, run the following code in the next cell.
 
 ```python
 !wget https://jdbc.postgresql.org/download/postgresql-42.2.9.jar
 ```
+![image](https://user-images.githubusercontent.com/99145651/187037003-dd6d6854-14ed-4115-95ba-49f7a8cc04d0.png)
 
 - - -
 
-## Submission
-
-* **Important**: You must clean up all your AWS resources. Consult the [AWS cleanup guide](../Resources/AWS_cleanup.pdf) and [AWS check billing guide](../Resources/AWS_check_billing.pdf) as reference.
-
-* Download your Google Colab notebooks as `.ipynb` files and upload those to GitHub.
-
-* Copy your SQL queries into `.sql` files and upload them to GitHub.
-
-* **Important:** Do not upload notebooks that contain your RDS password and endpoint. Delete these two items before making your notebook public!
-
-* Ensure your repository has regular commits and a thorough README.md file
-
-## Rubric
-
-[Unit 22 Homework Rubric](https://docs.google.com/document/d/1H-TBgBUz1jVGG1zvo046GraApmbepVZgYionh-4mNas/edit?usp=sharing)
-
-- - -
 
 ## References
 
@@ -134,6 +121,6 @@ Amazon customer Reviews Dataset. (n.d.). Retrieved April 08, 2021, from: [https:
 
 ---
 
-© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
 
 
