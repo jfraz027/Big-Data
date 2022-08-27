@@ -60,7 +60,8 @@ This homework assignment contains two levels. The second level is optional but h
 
 In Amazon's Vine program, reviewers receive free products in exchange for reviews.
 
-  ![vine01.png](../Images/vine01.png)
+ ![image](https://user-images.githubusercontent.com/99145651/187041902-cba8dd7c-ef24-4c38-855d-0232de63fcea.png)
+
 
 Amazon has several policies to reduce the bias of its Vine reviews: [https://www.amazon.com/gp/vine/help?ie=UTF8](https://www.amazon.com/gp/vine/help?ie=UTF8).
 
