@@ -62,7 +62,6 @@ In Amazon's Vine program, reviewers receive free products in exchange for review
 
  ![image](https://user-images.githubusercontent.com/99145651/187041902-cba8dd7c-ef24-4c38-855d-0232de63fcea.png)
 
-
 Amazon has several policies to reduce the bias of its Vine reviews: [https://www.amazon.com/gp/vine/help?ie=UTF8](https://www.amazon.com/gp/vine/help?ie=UTF8).
 
 But are Vine reviews truly trustworthy? Investigate whether Vine reviews are free of bias. Use either PySpark or, for an extra challenge, SQL to analyze the data.
@@ -73,6 +72,12 @@ But are Vine reviews truly trustworthy? Investigate whether Vine reviews are fre
 
 * Submit a summary of your findings and analysis.
 
+![image](https://user-images.githubusercontent.com/99145651/187281060-c5bdff85-adf8-4d75-abbe-3f23212fa874.png)
+
+![image](https://user-images.githubusercontent.com/99145651/187281169-d3cc705a-fe7d-4911-928c-f0f05299e988.png)
+
+Based on review of the above results, I would concluded the that reviews are slightly bias. Approxiametly, 51% of paid reviwers provide a 5 star review.
+However, there are a small number of reviewers being paid. (142). As opposed to 40471 with just under 39% providing a 5 star review.
 - - -
 
 ## Hints and Considerations
